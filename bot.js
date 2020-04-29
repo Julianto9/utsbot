@@ -19,6 +19,11 @@ client.on('message', message => {
 	 if (message.content === 'pipik') {
        message.reply('**Senin** Sistem Operasi Dasar = 07.30 \n09.10 Basis Data Lanjut = 13.30 - 15.10');
        }
+	 if (message.content === 'uts') {
+	message.channel.send({embed: {
+  color: 3447003,
+  description: "A very simple Embed!"
+}});}
 
 });
 
