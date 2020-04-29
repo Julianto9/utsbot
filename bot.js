@@ -13,7 +13,7 @@ client.on('ready', () => {
  
 
 client.on('message', message => {
-    if (message.content === '@CTI') {
+    if (message.content === '@CTI#5914') {
        message.reply('apa mek');
        }
 	 
