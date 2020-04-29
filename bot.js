@@ -15,11 +15,11 @@ client.on('ready', () => {
 client.on('message', message => {
 
     if (message.content === 'ping') {
-
-       message.channel.send({embed: {
-  color: 3447003,
-  description: "A very simple Embed!"
-}});
+       message.reply('pong');
+       message.reply({embed: {
+       color: 3447003,
+       description: "A very simple Embed!"
+       }});
 
        }
 
