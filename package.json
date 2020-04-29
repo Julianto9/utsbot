@@ -1,10 +1,10 @@
 {
 
-  "name": "Example",
+  "name": "utsbot",
 
-  "description": "Example",
+  "description": "Simple javascript discord bot",
 
-  "version": "0.0.0",
+  "version": "0.1",
 
   "main": "bot.js",
 
