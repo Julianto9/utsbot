@@ -9,8 +9,8 @@ client.user.setActivity("/help");
 
 client.on('ready', () => {
 console.log('rede');
-    bot.user.setStatus('available')
-    bot.user.setPresence({
+    client.user.setStatus('available')
+    client.user.setPresence({
         game: {
             name: 'with depression',
             type: "STREAMING",
