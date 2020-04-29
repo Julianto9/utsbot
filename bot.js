@@ -11,7 +11,7 @@ client.on('ready', () => {
  
 
 client.on('message', message => {
-    if(message.author.client === false) {
+    if(message.author.bot === false) {
 	    if (message.content === 'wes') {
        		message.channel.send('wes');
        }
