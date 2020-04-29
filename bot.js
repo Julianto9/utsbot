@@ -11,9 +11,11 @@ client.on('ready', () => {
  
 
 client.on('message', message => {
-    if (message.content === 'wes') {
-       message.channel.send('wes');
+    if(message.author.client === false) {
+	    if (message.content === 'wes') {
+       		message.channel.send('wes');
        }
+}
 
 	 
 	 if (message.content === '/uts') {
