@@ -8,11 +8,6 @@ client.on('ready', () => {
 
 });
  
-client.user.setActivity("with depression", {
-  type: "STREAMING",
-  url: "https://www.twitch.tv/example-url"
-});
-
  
 
 client.on('message', message => {
