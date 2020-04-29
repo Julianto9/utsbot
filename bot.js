@@ -5,9 +5,6 @@ const client = new Discord.Client();
 client.on('ready', () => {
 
     console.log('I am ready!');
-	client.user.setActivity('/uts', { type: 'PLAYING' })
-  .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
-  .catch(console.error);
  });
 
 client.on('message', message => {
