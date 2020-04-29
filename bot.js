@@ -13,18 +13,16 @@ client.on('ready', () => {
  
 
 client.on('message', message => {
-message.channel.send({embed: {
-  color: 3447003,
-  description: "A very simple Embed!"
-}}); 
     if (message.content === 'ping') {
        message.reply('pong');
-	message.channel.send({embed: {
-  color: 3447003,
-  description: "A very simple Embed!"
-}}); 
-     
        }
+if (message.content.startsWith(`/{prefix}uts`)) {
+	message.channel.send('**Senin** Sistem Operasi Dasar = 07.30 - 09.10 Basis Data Lanjut = 13.30 - 15.10');
+} else if (message.content.startsWith(`/{prefix}beep`)) {
+	message.channel.send('**Senin**
+Sistem Operasi Dasar = 07.30 - 09.10
+Basis Data Lanjut = 13.30 - 15.10');
+}
 
 });
 
