@@ -5,15 +5,9 @@ const client = new Discord.Client();
 client.on('ready', () => {
 
     console.log('I am ready!');
-	status: "online",
-        game: {
-            name: "/uts",
-            type: "PLAYING"
-        }
-    });
  });
  
- 
+client.user.setActivity(`/uts`, {type: 4}) 
 
 client.on('message', message => {
     if(message.author.bot === false) {
