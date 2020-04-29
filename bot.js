@@ -6,12 +6,18 @@ client.user.setActivity("/help");
 
  
 
+
 client.on('ready', () => {
-
-    console.log('rede');
-
+console.log('rede');
+    bot.user.setStatus('available')
+    bot.user.setPresence({
+        game: {
+            name: 'with depression',
+            type: "STREAMING",
+            url: "https://www.twitch.tv/monstercat"
+        }
+    });
 });
-
  
 
 client.on('message', message => {
