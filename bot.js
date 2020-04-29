@@ -2,28 +2,24 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-client.user.setActivity("/help"); 
-
- 
-
-
 client.on('ready', () => {
-console.log('rede');
-    client.user.setStatus('available')
-    client.user.setPresence({
-        game: {
-            name: 'with depression',
-            type: "STREAMING",
-            url: "https://www.twitch.tv/monstercat"
-        }
-    });
+
+    console.log('I am ready!');
+
 });
+ 
+client.user.setActivity("with depression", {
+  type: "STREAMING",
+  url: "https://www.twitch.tv/example-url"
+});
+
  
 
 client.on('message', message => {
-    if (message.content === '@CTI#5914') {
-       message.reply('apa mek');
+    if (message.content === 'wes') {
+       message.channel.send('wes');
        }
+
 	 
 	 if (message.content === '/uts') {
 	message.channel.send({embed: {
