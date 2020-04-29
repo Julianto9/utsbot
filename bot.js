@@ -14,15 +14,11 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-       message.reply('pong');
+       message.reply('**Senin** Sistem Operasi Dasar = 07.30 - 09.10 Basis Data Lanjut = 13.30 - 15.10');
        }
-if (message.content.startsWith(`/{prefix}uts`)) {
-	message.channel.send('**Senin** Sistem Operasi Dasar = 07.30 - 09.10 Basis Data Lanjut = 13.30 - 15.10');
-} else if (message.content.startsWith(`/{prefix}beep`)) {
-	message.channel.send('**Senin**
-Sistem Operasi Dasar = 07.30 - 09.10
-Basis Data Lanjut = 13.30 - 15.10');
-}
+	 if (message.content === 'pipik') {
+       message.reply('**Senin** Sistem Operasi Dasar = 07.30 \n09.10 Basis Data Lanjut = 13.30 - 15.10');
+       }
 
 });
 
