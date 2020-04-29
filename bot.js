@@ -1,22 +1,7 @@
 const Discord = require('discord.js');
 
 const client = new Discord.Client();
-
- 
-
-client.on('ready', () => {
-
-    console.log('I am ready!');
-
-});
-
- 
-
-client.on('message', message => {
-
-    if (message.content === 'ping') {
-       message.reply('pong');
-       const exampleEmbed = new Discord.MessageEmbed()
+const exampleEmbed = new Discord.MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Some title')
 	.setURL('https://discord.js.org/')
@@ -33,8 +18,24 @@ client.on('message', message => {
 	.setImage('https://i.imgur.com/wSTFkRM.png')
 	.setTimestamp()
 	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
+ 
 
-channel.send(exampleEmbed);
+client.on('ready', () => {
+
+    console.log('I am ready!');
+
+});
+
+ 
+
+client.on('message', message => {
+
+    if (message.content === 'ping') {
+       message.reply('pong');
+	channel.send(exampleEmbed);
+	 message.reply('kntl');
+	    message.reply(exampleEmbed);  
+     
        }
 
 });
