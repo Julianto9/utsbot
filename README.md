@@ -2,4 +2,6 @@
 Simple javascript discord bot
 
 # Commands
-/uts
+.help
+.uts
+.tolong
