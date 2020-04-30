@@ -13,7 +13,7 @@ client.on('message', message => {
        		message.channel.send('wes');
        }
 }
-
+if (message.content === '/w') {message.channel.send('$w');}
 	 
 	 if (message.content === '/uts') {
 	message.channel.send({embed: {
