@@ -30,7 +30,7 @@ if (message.content === '.so'){message.channel.send("absen so" + "@everyone");me
 	if (message.content === '.help') {
 	message.channel.send({embed: {
       "title": "Commands",
-      "description": "**/help** : tolng\n**/uts** : jadwal uts\n**/tolong** : tolong",
+      "description": "**.help** : tolng\n**.uts** : jadwal uts\n**.tolong** : tolong",
       "color": 7506394,
       "thumbnail": {
         "url": "https://i1.sndcdn.com/avatars-000042341361-yma5yn-t500x500.jpg"
