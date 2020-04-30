@@ -17,7 +17,7 @@ client.on('message', message => {
 }
 
 
-if (message.content === '/w') {message.channel.send('$w');}
+if (message.content === '/tolong') {message.channel.send('toloooooooooooooooooooooooooooooong');}
 	 
 	 if (message.content === '/uts') {
 	message.channel.send({embed: {
