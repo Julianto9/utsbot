@@ -17,7 +17,7 @@ client.on('message', message => {
 }
 
 
-if (message.content === '.tolong') {message.channel.send('toloooooooooooooooooooooooooooooong');}
+if (message.content === '.tolong') {message.channel.send('pantek kau');}
 if (message.content === '.so'){message.channel.send("absen so " + "@everyone");message.channel.send("absen so " + "@everyone");message.channel.send("absen so " + "@everyone");}
 	 
 	 if (message.content === '.uts') {
